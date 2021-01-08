@@ -1,8 +1,8 @@
-.container {
+.image {
     display: inline-block;
     position: relative;
 }
-.container .text {
+.image .text {
     z-index: 1;
     position: absolute;
     text-align: center;
@@ -10,8 +10,11 @@
     margin: 0 auto;
     left: 0;
     right: 0;
-    top: 15%;
+    top: 12%;
     color: white;
     width: 70%;
 }
 
+body {
+    background-color: black;
+}
