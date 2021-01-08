@@ -16,7 +16,7 @@
   <body>
     <div class="container-fluid">
         <header class="row align-item-center">
-            <div class="col-6">
+            <div class="col-6"><!-- subdivision en deux colonnes de 6 pour Tous les écrans -->
                 <img src="img/logo.svg" alt="Logo Fylo">
             </div>
             <div class="col-6">
@@ -36,7 +36,7 @@
 
             <div class="col-md-5 bg-white align-self-center">
                 <h2>All your files in one secure location, accessible anywhere</h2>
-                <p>Fylo stores you most important files in one secure location. Access them wherever you nees, share and collaborate with friends, family, and co-workers.</p>
+                <p>Fylo stores your most important files in one secure location. Access them wherever you nees, share and collaborate with friends, family, and co-workers.</p>
                 <div class="row mx-auto">
                     <form action="#" method="POST" id="form1" class="form-inline">
                         <div class="col-md-7 form-group">
@@ -54,6 +54,33 @@
             </div><!-- Fin de col -->
         </div><!-- Fin de row -->
 
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/diapo1.png" class="d-block w-100" alt="Un dégradé">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/diapo2.png" class="d-block w-100" alt="Un dégradé orange">
+                      </div>
+        
+                    </div><!-- Fin carousel inner -->
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </main>
       
 
@@ -78,10 +105,9 @@
     <!-- bootstrap JS en Local -->
     <!-- <script src="js/bootstrap.js"></script> -->
     <script>
-        var age = 30 + 1;
-var phrase = "Bonjour, je m\'appelle ";
-var prenom = "Maxime";
-console.log(phrase + prenom + " et j'ai " + (30+1) + " ans");
+        $('.carousel').carousel({
+            interval: 3000
+        })
     </script>
   </body>
 </html>
